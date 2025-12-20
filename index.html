@@ -89,6 +89,7 @@
         section {
             padding: 100px 20px;
             text-align: center;
+            justify-items: center;
         }
 
         h2 {
@@ -169,6 +170,22 @@
                 font-size: 2em;
             }
         }
+/* foto */
+    .foto {
+        width: 150px;      /* ukuran lingkaran */
+        height: 150px;
+        border: 5px solid;
+        border-color: #00ffcc;
+        border-radius: 50%;
+        overflow: hidden;  /* potong gambar agar mengikuti lingkaran */
+    }
+    
+    .foto img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* agar gambar tidak gepeng */
+    }
+
         /*footer  */
         footer{
             text-align :center;
@@ -196,24 +213,28 @@
 
     <section id="about">
         <h2>About Me</h2>
-        <p>Saya adalah seorang desainer/developer dengan passion di bidang teknologi futuristik. Saya menciptakan pengalaman digital yang elegan dan inovatif.</p>
+        <div class="foto">
+            <img src="foto.jpg" alt="">
+        </div>
+        <p>Saya Mahasiswa Informatika Universitas Hamzanwadi, saya adalah orang biasa 
+            yang sedang memulai belajar ngoding dan saya suka Melakukan hal tersebut</p>
     </section>
 
     <section id="projects">
         <h2>Projects</h2>
         <div class="projects-grid">
             <div class="project-card">
-                <img src="https://via.placeholder.com/300x200?text=Project+1" alt="Project 1">
+                <img src="mesinKopi.jpg" alt="Project 1">
                 <h3>Project 1</h3>
                 <p>Deskripsi singkat project pertama.</p>
             </div>
             <div class="project-card">
-                <img src="https://via.placeholder.com/300x200?text=Project+2" alt="Project 2">
+                <img src="penggiling.jpg" alt="Project 2">
                 <h3>Project 2</h3>
                 <p>Deskripsi singkat kedua.</p>
             </div>
             <div class="project-card">
-                <img src="https://via.placeholder.com/300x200?text=Project+3" alt="Project 3">
+                <img src="mesinAir.jpg" alt="Project 3">
                 <h3>Project 3</h3>
                 <p>Deskripsi singkat ketiga.</p>
             </div>
